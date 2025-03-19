@@ -1,5 +1,7 @@
-# Clase TALLER PROGRAMACION 2
+# Clase TALLER PROGRAMACION 2 - DEVELOP
 
 # Primer ejemplo:
 
-# Nombre: 
+# Nombre: Matias
+
+# Nombre: Juan
