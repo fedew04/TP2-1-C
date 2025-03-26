@@ -9,7 +9,11 @@ let nombre = "Matias"
 
 
 const familia = {
-
+    padre:{
+        nombre: 'pepe',
+        edad: 65,
+    },
+    madre: "Laura"
 }
 
 const usuario = {

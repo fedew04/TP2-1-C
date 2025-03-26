@@ -41,7 +41,7 @@ variable1 = 29
 
 // console.log("Object: ", typeof object)
 
-
+            //0, 1, 2, 3
 let array = [1, 2, "strings", [5, 6], true, false, {}]
 
 console.log("array: ", array[2]);
