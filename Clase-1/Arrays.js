@@ -120,25 +120,52 @@ let usuarios = [
 let fechaHoy = new Date
 
 let usuariosNuevos;
-console.log('Usuarios Nuevos Hasta aca: ', usuariosNuevos);
 
-usuariosNuevos = usuarios.map((user, indice) => {
-    // console.log("El usuario " + indice + " es: ", user);
-    // console.log(`El usuario ${indice} es: ${JSON.stringify(user)}`, );
+
+// console.log('Usuarios Nuevos Hasta aca: ', usuariosNuevos);
+
+
+// (a, b) => {
+
+//     return a + b
+// }
+
+// usuariosNuevos = usuarios.map((user, indice) => {
+//     // console.log("El usuario " + indice + " es: ", user);
+//     // console.log(`El usuario ${indice} es: ${JSON.stringify(user)}`, );
     
-    user.fechaIncripcion = fechaHoy
+//     user.fechaIncripcion = fechaHoy
 
-    if(indice == 2){
-        return user
-    }else{
-        return 'Not Found'
-    }
-    console.log('Usuarios Nuevos Hasta ahora: ', usuariosNuevos);
-})
+//     if(indice == 2){
+//         return user
+//     }else{
+//         return 'Not Found'
+//     }
+//     console.log('Usuarios Nuevos Hasta ahora: ', usuariosNuevos);
+// })
 
 
 
-console.log('Usuarios Nuevos Final: ', usuariosNuevos);
+// console.log('Usuarios Nuevos Final: ', usuariosNuevos);
+
+
+let palabra = "Matias"
+
+console.log(palabra);
+
+const palabraSeparada = palabra.split("")
+// console.log(palabraSeparada);
+
+
+// Modulo
+
+let num = 27
+
+// let esPar = num % 2 === 0
+let esImpar = num % 2 !== 0
+
+console.log('Es impar? ', esImpar);
+
 
 
 
