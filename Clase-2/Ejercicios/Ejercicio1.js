@@ -16,20 +16,30 @@ function invertirTexto(palabra) {
 function esPalindromo(palabra) {
   const palabraMinuscula = palabra.tolowerCase(); // Cambia toda la palabra a minuscula
   const palabraInvertida = invertirTexto(palabraMinuscula);
-  for (let i = 0; i < palabraMinuscula.length; i++) {
-    if (palabraMinuscula[i] !== palabraInvertida[i]) {
-      return false;
-    }
-  }
+
+  return palabraMinuscula === palabraInvertida;
   // Aca verifica si es palindromo
 }
 
-function verificarPalindromo() {
+function verificarPalindromo(array) {
   // Separen en 2 arrays, las palabras palindromos y las que no lo son
 
-  esPalindromo(palabra);
+  let palindromos = [];
+  let noPalindromos = [];
 
-  return; // esos dos arrays
+  let esPalindromo = false;
+  array.forEach((palabra) => {
+    esPalindromo = esPalindromo(palabra);
+    if (esPalindromo) {
+      palindromos.push(palabra);
+    } else {
+      noPalindromos.push(palabra);
+    }
+  });
+
+  let resultado = [palindromos, noPalindromos];
+
+  return resultado; // esos dos arrays
 }
 
 const palabras = [
@@ -42,16 +52,6 @@ const palabras = [
   "Reconocer",
 ];
 
-let palabra = "hola";
-let palabraInvertida = "";
-for (i = palabra.length; i >= 0; i--) {
-  palabraInvertida += palabra.charAt(i);
-}
-
-console.log(palabraInvertida);
-
-//verificarPalindromo(palabras);
-
-// console.log(verificarPalindromo(palabras));
+console.log(verificarPalindromo(palabras));
 
 // deberia devolver  2 arrays, uno con las palabras palindromas y otro con las que normales
